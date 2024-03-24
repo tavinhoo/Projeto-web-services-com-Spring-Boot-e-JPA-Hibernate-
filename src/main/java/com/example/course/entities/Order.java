@@ -57,7 +57,6 @@ public class Order implements Serializable {
         this.payment = payment;
     }
 
-
     public Long getId() {
         return id;
     }
@@ -91,6 +90,14 @@ public class Order implements Serializable {
 
     public void setClient(User client) {
         this.client = client;
+    }
+
+    public Double getTotal() {
+        double sum = 0.0;
+        for(OrderItem oi : items ){
+            sum += oi.getSubTotal();
+        }
+        return sum;
     }
 
     @Override
