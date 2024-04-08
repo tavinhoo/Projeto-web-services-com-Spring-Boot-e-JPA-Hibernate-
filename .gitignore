@@ -32,8 +32,7 @@ build/
 
 # Arquivos específicos
 HELP.md
-application.properties
-application-test.properties
+
 
 # Arquivos do Maven Wrapper
 !.mvn/wrapper/maven-wrapper.jar
